@@ -1,0 +1,35 @@
+package estruturasDeControle;
+
+import java.util.Scanner;
+
+public class DesafioWhile2 {
+
+	public static void main(String[] args) {
+
+		int alunos = 0;
+		double nota = 0;
+		int a = 0;
+		int r = 0;
+
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("Quantos alunos tem na sala?");
+		alunos = entrada.nextInt();
+		
+		for (int i = 0; i < alunos; i++) {
+			System.out.println("Qual a nota do aluno?");
+			nota = entrada.nextDouble();
+
+			if (nota >= 7.0) {
+				a++;
+			} else if (nota < 7.0) {
+				r++;
+			}
+		}
+		
+		System.out.println("A quantidade de alunos aprovados é " + a);
+		System.out.println("A quantidade de alunos reprovados é " + r);
+		
+		entrada.close();
+	}
+}

@@ -1,0 +1,43 @@
+package estruturasDeControle;
+
+import java.util.Scanner;
+
+public class DesafioDiaSemana {
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("Que dia é hoje?");
+		System.out.println("Digite 1 para domingo");
+		System.out.println("Digite 2 para segunda");
+		System.out.println("Digite 3 para terça");
+		System.out.println("Digite 4 para quarta");
+		System.out.println("Digite 5 para quinta");
+		System.out.println("Digite 6 para sexta");
+		System.out.println("Digite 7 para sábado");
+
+		int dia = entrada.nextInt();
+
+		while (dia != 1 || dia != 2 || dia != 3 || dia != 4 || dia != 5 || dia != 6 || dia != 7) {
+
+			if (dia == 1)
+				System.out.println("Hoje é domingo!");
+			if (dia == 2)
+				System.out.println("Hoje é segunda!");
+			if (dia == 3)
+				System.out.println("Hoje é terça!");
+			if (dia == 4)
+				System.out.println("Hoje é quarta!");
+			if (dia == 5)
+				System.out.println("Hoje é quinta!");
+			if (dia == 6)
+				System.out.println("Hoje é sexta!");
+			if (dia == 7)
+				System.out.println("Hoje é sábado!");
+			else
+				System.out.println("Número escolhido não está na lista");
+		}
+		entrada.close();
+	}
+}

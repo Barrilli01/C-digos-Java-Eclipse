@@ -1,0 +1,19 @@
+package atv2;
+
+import java.util.Scanner;
+
+public class Q1 {
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("Digite o tempo do evento em segundos");
+		int tempo = entrada.nextInt();
+
+		System.out.println("O tempo em horas do evento é  " + tempo / 3600);
+		System.out.println("em minutos é " + tempo / 60);
+		System.out.println("e em segundos é " + tempo);
+		System.out.println("ou seja " + tempo / 3600 + "horas, " + tempo / 60 + " minutos e " + tempo / 100);
+		entrada.close();
+	}
+}

@@ -1,0 +1,25 @@
+package estruturasCondicionais;
+
+import java.util.Scanner;
+
+public class Desafio2Atletas {
+
+	public static void main(String[] args) {
+		Scanner  entrada = new Scanner(System.in);
+		
+		int m = 0, f = 0;
+		String s;
+		
+		do {
+			System.out.println("Digite o sexo do atleta");
+			s = entrada.next();
+			
+			if (!s.equals("M") && !s.equals("F")) {
+				System.out.println("Inválido, digite novamente!");
+				System.out.println(" ");
+			}
+		} while(s.equals("M") && s.equals("F"));
+		
+		entrada.close();
+	}
+}
